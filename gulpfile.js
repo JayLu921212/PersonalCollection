@@ -34,7 +34,7 @@ gulp.task('watch', function() {
 
 gulp.task('inject', function() {
     var target = gulp.src('./src/pages/test.html');
-    var source = gulp.src(['./src/js/bootstrap.js','./src/css/*.css'], {read: false});
+    var source = gulp.src(['./src/js/*.js','./src/css/*.css'], {read: false});
     target.pipe(inject(source))
           .pipe(gulp.dest('./src/pages'));
 })
