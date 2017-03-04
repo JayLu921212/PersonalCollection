@@ -3,7 +3,7 @@ var gulp = require('gulp'), //本地安装gulp所用到的地方
     less = require('gulp-less'),
     watch = require('gulp-watch'),
     browserSync = require('browser-sync'),
-    connect = require('gulp-connect');
+    connect = require('gulp-connect'),
     inject = require('gulp-inject');
 
 //定义一个testLess任务（自定义任务名称）
