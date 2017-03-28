@@ -45,15 +45,13 @@ gulp.task('serve', ['compileLess'], function () {
 
 
 gulp.task('inject', function () {
-    var target = gulp.src('./dist/src/pages/*.html');
-    var source = gulp.src(['./dist/src/js/*.js', './dist/src/css/*.css'], {read: false});
+    var target = gulp.src(['src/*/*.html','src/*.html']);
+    // var target = gulp.src('src/*/*.html');
+    var source = gulp.src(['./dist/js/*.js', './dist/css/*.css','src/css/*.css'], {read: false});
     target.pipe(inject(source))
-        .pipe(gulp.dest('./dist/src/pages'));
+        .pipe(gulp.dest('src'));
 });
 
 
-gulp.task('default', ['compileLess', 'watch', 'inject', 'serve']); //定义默认任务 elseTask为其他任务，该示例没有定义elseTask任务
+gulp.task('default', ['compileLess','compressJs','watch', 'inject', 'serve']); //定义默认任务 elseTask为其他任务，该示例没有定义elseTask任务
 
-//gulp.task(name[, deps], fn) 定义任务  name：任务名称 deps：依赖任务名称 fn：回调函数
-//gulp.src(globs[, options]) 执行任务处理的文件  globs：处理的文件路径(字符串或者字符串数组) 
-//gulp.dest(path[, options]) 处理完后文件生成路径

@@ -1,4 +1,5 @@
 node_modules/
 .tmp/
-src/css*.css
+src/css/*.css
 .idea/
+dist/
