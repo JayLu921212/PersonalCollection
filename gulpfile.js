@@ -14,7 +14,7 @@ gulp.task('compileLess', function () {
         .pipe(less()) //该任务调用的模块
         .pipe(minifyCss())
         .pipe(concat('main.css'))
-        .pipe(gulp.dest('./dist/css')) //将会在src/css下生成index.css
+        .pipe(gulp.dest('./dist/src/css')) //将会在src/css下生成index.css
 });
 gulp.task('compressJs',function () {
     gulp.src('src/js/*.js')
@@ -30,7 +30,7 @@ gulp.task('watch', function () {
 });
 
 // browser 需要在制定目录下创建index.html
-gulp.task('serve', ['compileLess'], function () {
+gulp.task('serve', ['testLess'], function () {
     browserSync.init({
         //指定服务器启动根目录  
         // server: "./src"
