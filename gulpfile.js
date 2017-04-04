@@ -13,14 +13,14 @@ gulp.task('compileLess', function () {
     gulp.src('src/less/*.less') //该任务针对的文件
         .pipe(less()) //该任务调用的模块
         .pipe(minifyCss())
-        .pipe(concat('main.css'))
-        .pipe(gulp.dest('./dist/src/css')) //将会在src/css下生成index.css
+        // .pipe(concat('main.css'))
+        .pipe(gulp.dest('src/css'))
 });
 gulp.task('compressJs',function () {
-    gulp.src('src/js/*.js')
-        .pipe(uglify())
-        .pipe(concat('main.js'))
-        .pipe(gulp.dest('dist/js'));
+    // gulp.src('src/js/*.js')
+    //     .pipe(uglify())
+    //     // .pipe(concat('main.js'))
+    //     .pipe(gulp.dest('src/js'));
 });
 
 gulp.task('watch', function () {
@@ -30,13 +30,13 @@ gulp.task('watch', function () {
 });
 
 // browser 需要在制定目录下创建index.html
-gulp.task('serve', ['testLess'], function () {
+gulp.task('serve', function () {
     browserSync.init({
         //指定服务器启动根目录  
         // server: "./src"
         //http://www.browsersync.cn/docs/options/ 选项配置说明
         server: {
-            baseDir: "src",
+            baseDir: "./src",
             //注意这里不要用./
             index: "index.html"
         }
@@ -45,11 +45,11 @@ gulp.task('serve', ['testLess'], function () {
 
 
 gulp.task('inject', function () {
-    var target = gulp.src(['src/*/*.html','src/*.html']);
-    // var target = gulp.src('src/*/*.html');
-    var source = gulp.src(['./dist/js/*.js', './dist/css/*.css','src/css/*.css'], {read: false});
-    target.pipe(inject(source))
-        .pipe(gulp.dest('src'));
+    // var target = gulp.src(['src/index.html']);
+    // // var target = gulp.src('src/*/*.html');
+    // var source = gulp.src(['src/js/*.js', 'src/css/*.css'], {read: false},{relative: true});
+    // target.pipe(inject(source))
+    //     .pipe(gulp.dest('src/'));
 });
 
 
