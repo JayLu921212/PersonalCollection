@@ -45,11 +45,7 @@ gulp.task('serve', function () {
 
 
 gulp.task('inject', function () {
-    // var target = gulp.src(['src/index.html']);
-    // // var target = gulp.src('src/*/*.html');
-    // var source = gulp.src(['src/js/*.js', 'src/css/*.css'], {read: false},{relative: true});
-    // target.pipe(inject(source))
-    //     .pipe(gulp.dest('src/'));
+    // auto inject fn here
 });
 
 
