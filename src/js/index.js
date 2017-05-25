@@ -11,7 +11,7 @@
                 "text": "test",
                 "href": "../pages/test.html"
             },{
-                "text": "text",
+                "text": "issues",
                 "href": "../pages/issues.html"
             },{
                 "text": "RBG Color",
