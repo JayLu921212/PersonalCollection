@@ -6,10 +6,19 @@
     // var
     var routeTreeSource = [
         {
-            "text": "正则",
-            "href": "../pages/test.html",
+            "text": "Level 1",
             "nodes": [{
-                "text": "Child1"
+                "text": "test",
+                "href": "../pages/test.html"
+            },{
+                "text": "text",
+                "href": "../pages/issues.html"
+            },{
+                "text": "RBG Color",
+                "href": "../pages/rgb.html"
+            },{
+                "text": "reference",
+                "href": "../pages/reference.html"
             }]
         }
     ];

@@ -2,6 +2,7 @@
   "text":"正则",
   "href":"../pages/test.html",
   "node":[{
-    "text":"Child1"
+    "text":"RBG Color",
+    "href": "../pages/test.html"
   }]
 }
