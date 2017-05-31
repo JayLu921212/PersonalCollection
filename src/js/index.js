@@ -19,6 +19,9 @@
             },{
                 "text": "reference",
                 "href": "../pages/reference.html"
+            },{
+                "text": "fontawesome",
+                "href": "../pages/fontawesome.html"
             }]
         }
     ];
