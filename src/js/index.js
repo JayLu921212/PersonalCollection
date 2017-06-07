@@ -4,30 +4,7 @@
 (function () {
     'use strict';
     // var
-    var routeTreeSource = [
-        {
-            "text": "Level 1",
-            "nodes": [{
-                "text": "test",
-                "href": "../pages/test.html"
-            },{
-                "text": "issues",
-                "href": "../pages/issues.html"
-            },{
-                "text": "RBG Color",
-                "href": "../pages/rgb.html"
-            },{
-                "text": "reference",
-                "href": "../pages/reference.html"
-            },{
-                "text": "fontawesome",
-                "href": "../pages/fontawesome.html"
-            },{
-                "text": "scroll",
-                "href": "../pages/scroll.html"
-            }]
-        }
-    ];
+    var routeTreeSource = [JSON.parse(window.sessionStorage.menuJson)];
     // fn
     function init() {
         _initRouteTree();

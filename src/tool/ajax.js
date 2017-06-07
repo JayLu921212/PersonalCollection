@@ -13,7 +13,8 @@
         XMLRequest.onreadystatechange = function () {
             if (XMLRequest.readyState == 4 && XMLRequest.status==200 && XMLRequest.responseText) {
                 returnData = JSON.parse(XMLRequest.responseText);
-                console.log(returnData);
+                // console.log(returnData);
+                window.sessionStorage.setItem("menuJson", JSON.stringify(returnData));
             }
         };
         XMLRequest.open('GET','../assets/treeData.json',true);
