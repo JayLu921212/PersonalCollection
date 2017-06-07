@@ -22,6 +22,9 @@
             },{
                 "text": "fontawesome",
                 "href": "../pages/fontawesome.html"
+            },{
+                "text": "scroll",
+                "href": "../pages/scroll.html"
             }]
         }
     ];
