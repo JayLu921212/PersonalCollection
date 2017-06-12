@@ -1,4 +1,36 @@
 .left-nav {
-  width: 15%;
+  float: left;
+  width: 0;
   height: 100%;
+  overflow: hidden;
+  &.open-left {
+    animation: open-left-action 1s ease;
+    animation-fill-mode: forwards;
+  }
+  @keyframes open-left-action {
+    from {
+      width: 0;
+    }
+    to {
+      width: 200px;
+    }
+  }
+  //&.close-left {
+  //  width: 200px;
+  //  animation: close-left-action 1s ease;
+  //  animation-fill-mode: forwards;
+  //}
+  //@keyframes close-left-action {
+  //  from {
+  //    width: 200px;
+  //  }
+  //  to {
+  //    width: 0;
+  //  }
+  //}
+}
+
+.right-content {
+  height: 100%;
+  width: auto;
 }

@@ -38,7 +38,7 @@ gulp.task('serve', function () {
         server: {
             baseDir: "./src",
             //注意这里不要用./
-            index: "index.html"
+            index: "pages/dashboard.html"
         }
     });
 });

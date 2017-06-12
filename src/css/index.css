@@ -1,1 +1,1 @@
-.left-nav{width:15%;height:100%}
+.left-nav{float:left;width:0;height:100%;overflow:hidden}.left-nav.open-left{animation:open-left-action 1s ease;animation-fill-mode:forwards}@keyframes open-left-action{from{width:0}to{width:200px}}.right-content{height:100%;width:auto}

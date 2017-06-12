@@ -1,22 +1,37 @@
-{
-  "text": "Level 1",
-  "nodes": [{
-    "text": "test",
-    "href": "../pages/test.html"
-  },{
-    "text": "issues",
-    "href": "../pages/issues.html"
-  },{
-    "text": "RBG Color",
-    "href": "../pages/rgb.html"
-  },{
-    "text": "reference",
-    "href": "../pages/reference.html"
-  },{
-    "text": "fontawesome",
-    "href": "../pages/fontawesome.html"
-  },{
-    "text": "scroll",
-    "href": "../pages/scroll.html"
-  }]
-}
+[{
+  "text":"js"
+},{
+  "text": "css"
+},{
+  "text": "html",
+  "nodes": [
+    {
+      "text": "test",
+      "href": "../pages/test.html"
+    },
+    {
+      "text": "issues",
+      "href": "../pages/issues.html"
+    },
+    {
+      "text": "RBG Color",
+      "href": "../pages/rgb.html"
+    },
+    {
+      "text": "reference",
+      "href": "../pages/reference.html"
+    },
+    {
+      "text": "fontawesome",
+      "href": "../pages/fontawesome.html"
+    },
+    {
+      "text": "scroll",
+      "href": "../pages/scroll.html"
+    },
+    {
+      "text": "styles",
+      "href": "../pages/styles.html"
+    }
+  ]
+}]

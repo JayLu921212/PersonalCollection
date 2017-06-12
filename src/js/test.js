@@ -52,4 +52,5 @@
     cat.number = 2;
     console.log(dog.number);
 
+
 })();
